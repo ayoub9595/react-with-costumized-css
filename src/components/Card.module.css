@@ -1,0 +1,49 @@
+.card-container {
+   width: 50%;
+   box-shadow: 2px 2px 2px 2px gray;
+   border-radius: 8px;
+   margin: 20px 0;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: space-around;  
+
+}
+
+.title {
+    color: black;
+    font-size: 22px;
+    text-align: center;
+}
+
+.description {  
+    margin-left: 1%;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1%;
+}
+.button {
+    width: 60px;
+    height: 40px;
+    color: black;
+    background: #e09393;
+    border: none;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.button:hover,.button:active {
+    cursor: pointer;
+    background: black;
+    color: #e09393
+}
+
+
+@media (max-width: 640px) {
+    .card-container {
+        width: 80%;
+    }
+}

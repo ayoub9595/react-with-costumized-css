@@ -1,0 +1,29 @@
+.modal {
+    width: 400px;
+    height: 150px;
+    z-index: 1001;
+    position: fixed;
+    top: 40vh;
+    left: 30vw;
+    border: 2px solid black;
+    background: white;
+    padding: 1%;
+}
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+.button {
+    width: 60px;
+    height: 40px;
+    margin-left: 1%;
+    color: black;
+    background: #e09393;
+    border: none;
+    font: inherit;
+}
+.button:hover,.button:active {
+    cursor: pointer;
+    color: #e09393;
+    background: black;
+}

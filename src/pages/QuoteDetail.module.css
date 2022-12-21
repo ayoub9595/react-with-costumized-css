@@ -1,0 +1,25 @@
+.title {
+    text-align: center;
+}
+
+.container {
+    margin-left: 10px;
+}
+
+.description {
+    font-size: 25px;
+}
+
+.button {
+    background: #e09393; 
+    height: 50px;
+    width: 80px;
+    font-weight: bold;
+}
+
+.button:hover,.button:active {
+    cursor: pointer;
+    color: #e09393;
+    background: black;
+    border: 2px solid #e09393
+}

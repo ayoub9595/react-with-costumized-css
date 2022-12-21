@@ -1,0 +1,15 @@
+.cards {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.link {
+    text-decoration: none;
+}
+
+/* @media (max-width: 640px) {
+    .cards {
+        align-items: stretch;
+    }   
+} */
