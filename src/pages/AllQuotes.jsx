@@ -5,9 +5,10 @@ import { deleteQuote, getAllQuotes } from '../services/QuoteServices'
 import { useNavigate } from 'react-router-dom'
 import AuthContext from '../store/auth-context'
 import Modal from '../components/Modal'
-import { LIKED_QUOTES } from '../helpers/helpers'
+import LoaderSkeleton from '../components/LoaderSkeleton'
 
 const AllQuotes = () => {
+
     const context = useContext(AuthContext)
     const [elements, setElements] = useState([])
     const [showModal, setShowModal] = useState(false)
@@ -55,7 +56,7 @@ const AllQuotes = () => {
     }, [])
     return (
         <>
-            {elements.length === 0 ? (<div>Loading ...</div>) :
+            {elements.length === 0 ? <LoaderSkeleton/> :
 
                 (
                     <>

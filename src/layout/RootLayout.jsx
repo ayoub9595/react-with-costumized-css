@@ -8,8 +8,11 @@ import classes from './RootLayout.module.css'
 const RootLayout = () => {
     const context = useContext(AuthContext)
     const backdropClickHandler = () => {
-        context.hideBackDrop()
-        context.hideMobileNav()
+        if(context.showMobileNav) {
+            context.hideBackDrop()
+            context.hideMobileNav()
+        }
+
     }
     return (<>
         {context.showBackdrop &&  <div className={classes.backdrop} onClick={backdropClickHandler}></div> }
