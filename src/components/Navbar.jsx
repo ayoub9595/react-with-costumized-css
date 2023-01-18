@@ -6,15 +6,11 @@ import AuthContext from '../store/auth-context'
 import {elements} from '../helpers/helpers'
 
 
-const Navbar = () => {
+const Navbar = ({handleTbClick}) => {
   const context = useContext(AuthContext)
-  const toggleButtonHandler = () => {
-    context.displayBackDrop()
-    context.displayMobileNav()
-  }
   return (<>
     <div className={classes.nav}>
-      <div className={classes['toggle-button']} onClick={toggleButtonHandler}>
+      <div className={classes['toggle-button']} onClick={handleTbClick}>
         <div className={classes['button-bar']}></div>
         <div className={classes['button-bar']}></div>
         <div className={classes['button-bar']}></div>
